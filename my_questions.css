@@ -1,0 +1,131 @@
+/* General Styling */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to bottom, #f0f8ff, #e6f7ff);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #007bff;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for Questions and Answers */
+.question-block {
+    background: #c6dfff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.question-block:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.question-block p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.question-block p strong {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.question-block p em {
+    color: #888;
+    font-style: italic;
+}
+
+.answer-block {
+    background: #e3f2fd;
+    border-left: 4px solid #007bff;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+   
+}
+
+.answer-block p {
+    margin: 8px 0;
+}
+
+.answer-block p strong {
+    color: #0056b3;
+    font-weight: bold;
+}
+
+.answer-block p em {
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Back to Home Button */
+.back-button {
+    display: inline-block;
+    text-align: center;
+    margin: 20px auto;
+    padding: 12px 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .question-block {
+        padding: 15px;
+    }
+
+    .answer-block {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+}
+
+.ans{
+    background: #a2cbff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+

@@ -1,0 +1,354 @@
+
+body {
+    font-family: 'Montserrat', sans-serif; 
+    background: linear-gradient(to bottom right, #f5f7fa, #c3cfe2); /* Softer gradient for modern look */
+    margin: 0;
+    padding: 0;
+    animation: fadeIn 1.2s ease-in-out;
+    color: #333;
+    transition: all 0.4s ease; 
+    overflow-x: hidden;
+}
+
+/*@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+*/
+
+
+header {
+    background-color: #4c6ef5;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: slideDown 0.8s ease;
+    
+}
+
+header h1 {
+    margin: 0;
+    font-size: 34px; 
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+@keyframes slideDown {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(0); }
+}
+
+
+nav {
+    background: rgba(52, 152, 219, 0.9);
+    padding: 10px 0;
+    text-align: center;
+    position: sticky;
+    top: 80px;
+    z-index: 999;
+}
+
+nav a {
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    transition: background-color 0.4s ease, transform 0.3s ease, color 0.4s ease;
+    border-radius: 30px; 
+    display: inline-block;
+    margin: 0 5px;
+}
+
+nav a:hover {
+    background-color: #34495e;
+    color: #e8491d;
+    transform: scale(1.08);
+}
+
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 60px;
+}
+
+
+form {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+form:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+form select, form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+    background-color: #f7f7f7;
+}
+form input{
+
+    width: 50%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+    background-color: #f7f7f7;
+    
+}
+
+form input:focus, form textarea:focus {
+    border-color: #4c6ef5;
+    box-shadow: 0 0 12px rgba(52, 103, 219, 0.5);
+}
+
+button {
+    background: linear-gradient(to right, #1abc9c, #16a085);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    width: 50%;
+    font-weight: bold;
+}
+
+button:hover {
+    background: linear-gradient(to right, #16a085, #1abc9c);
+    transform: translateY(-3px);
+}
+
+
+.questions {
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    transition: all 0.3s ease;
+}
+
+.questions:hover {
+    transform: translateY(-5px);
+}
+
+.questions p {
+    font-size: 18px;
+    color: #2c3e50;
+}
+
+.questions .answer {
+    background-color: rgba(52, 152, 219, 0.15);
+    padding: 20px;
+    border-left: 4px solid #3498db;
+    border-radius: 12px;
+    margin-top: 15px;
+    box-shadow: 0 6px 12px rgba(52, 152, 219, 0.3);
+}
+
+.questions .answer p {
+    font-size: 17px;
+    color: #2c3e50;
+}
+
+.questions form textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+    margin-right: 10px;
+}
+
+.questions form textarea:focus {
+    border-color: #3498db;
+}
+
+.questions form button {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.4s ease, transform 0.3s ease;
+}
+
+.questions form button:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px);
+}
+
+
+#floatingButton {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #e74c3c;
+    color: white;
+    border-radius: 50%;
+    padding: 15px 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+#floatingButton:hover {
+    background-color: #c0392b;
+    transform: scale(1.2);
+}
+
+
+footer {
+    background: #2c3e50;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-top: 5px solid #e8491d;
+    position: relative;
+    bottom: 0;
+    
+}
+
+footer h2.foot, footer h3.foot, footer h5.foot {
+    margin: 0;
+    padding: 5px;
+    font-weight: 400;
+}
+
+footer h2.foot {
+    font-size: 24px;
+    animation: fadeInUp 2s ease;
+}
+
+footer h5.foot {
+    font-size: 16px;
+}
+
+footer h3.foot {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+footer .footer-social ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer .footer-social ul li {
+    margin: 0 15px;
+}
+
+footer .footer-social ul li a img {
+    width: 30px;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+footer .footer-social ul li a img:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.content-section {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #34495e;
+    margin-top: 30px;
+    animation: fadeIn 1s ease-in-out;
+    margin-left: 10px;
+    border: 1px solid black;
+    margin-right: 10px;
+    padding: 15px;
+    border-radius: 10px;
+   
+}
+.upvote-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.upvote-count {
+    font-weight: bold;
+    color: #666;
+}
+
+.upvote-button {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 40px;
+}
+
+.upvote-button:hover {
+    background-color: #e0e0e0;
+}
+
+.upvote-button.upvoted {
+    background-color: #4CAF50;
+    color: white;
+    
+}
+
+.upvote-form {
+    display: inline;
+}
+#his_btn{
+    width: 70%;
+    margin: 20px;
+}
+#his_head{
+    margin-left: 20px;
+}
+#back_btn {
+    width: 20vh;
+    display: block;
+    margin: 20px auto; 
+    text-align: center;
+}
+
+html {
+    scroll-behavior: smooth; 
+}
+#scrollButton{
+    width: 200px;
+    height: 40px;
+}
